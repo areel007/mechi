@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 1rem;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    height: 15vh;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    top: 0;
+}
+
+#logo {
+    margin: 0 10rem;
+}
+
+header nav {
+    margin: 0 auto 0 0;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1rem 0 0;
+}
+
+header nav ul li a {
+    padding: .5rem 1rem;
+}
+
+header nav ul li a:hover, .active {
+    background-color: #494949;
+    color: #fff;
+}
+
+#sign-up-for-newsletter {
+    margin: 0 4rem 0 0;
+}
+
+#sign-up-for-newsletter button {
+    background-color: #fa4e10;
+    color: #fff;
+    font-size: 1.05rem;
+}
+
+#sign-up-for-newsletter button:hover {
+    background-color: #494949;
+}
+
+/* End of Header */
+
+a {
+    text-decoration: none;
+    color: #494949;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #494949;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: .7rem 2rem;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+#home {
+    flex-direction: column;
+    position: relative;
+    top: 15vh;
+    background-color: whitesmoke;
+    margin: .5rem 0;
+    position: relative;
+    /* top: 1rem; */
+}
+
+#home h1, #home p{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+#home h1 {
+    transform: scale(1.2);
+    color: #fa4e10;
+    transition: .5s all ease;
+}
+
+#home p {
+    line-height: 1.8;
+}
+
+#dig-deep {
+    color: #fff;
+    background-color: #494949;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+#dig-deep:hover {
+    background-color: #fff;
+    color: #494949;
+    border: 1px solid #494949;
+}
+
+/* Hamburger */
+#hamburger {
+    width: 2rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#inner-hamburger {
+    width: 2rem;
+    height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bars {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: 1s;
+}
+
+/* Buy */
+#buy-for-me {
+    position: relative;
+    top: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+#inner-buy {
+    height: 50%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#buy-text {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#buy-for-me h1 {
+    margin-bottom: 1rem;
+    color: #fa4e10;
+}
+
+#buy-text p {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: left;
+    width: 70%;
+    line-height: 1.6;
+}
+
+#buy-image {
+    width: 50%;
+}
+
+#buy-image img {
+    width: 100%;
+}
+
+/* Sell for me */
+#sell-for-me {
+    position: relative;
+    top: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding-top: 1rem;
+}
+
+#inner-sell {
+    height: 50%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#sell-text {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#sell-for-me h1 {
+    margin-bottom: 1rem;
+    color: #fa4e10;
+}
+
+#sell-text p {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: left;
+    width: 70%;
+    line-height: 1.6;
+    text-align: right;
+}
+
+#sell-image {
+    width: 50%;
+}
+
+#sell-image img {
+    width: 100%;
+}
+
+/* Trade for me */
+#trade-for-me {
+    position: relative;
+    top: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+#inner-trade {
+    height: 50%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#trade-text {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#trade-for-me h1 {
+    margin-bottom: 1rem;
+    color: #fa4e10;
+}
+
+#trade-text p {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: left;
+    width: 70%;
+    line-height: 1.6;
+    text-align: left;
+}
+
+#trade-image {
+    width: 50%;
+}
+
+#trade-image img {
+    width: 100%;
+}
+
+/* Newsletter */
+#newsletter {
+    position: relative;
+    top: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding-top: 1rem;
+}
+
+#inner-newsletter {
+    height: 50%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#inner-newsletter h1 {
+    margin-bottom: 1rem;
+    color: #fa4e10;
+}
+
+#text-box {
+    padding: .5rem;
+    background-color:#494949;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#text-box input {
+    height: 100%;
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid transparent;
+    color: #fff;
+    padding-left: 1rem;
+}
+
+::placeholder {
+    color: #fff;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+}
+
+#text-box button {
+    background-color: #fa4e10;
+    border: 1px solid transparent;
+    outline: none;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    top: 1rem;
+    width: 100%;
+    height: 100vh;
+    background-color: #494949;
+    display: flex;
+    justify-content: center;
+    z-index: 6;
+}
+
+#contact {
+    width: 40%;
+    margin-left: 5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 7;
+    justify-content: center;
+    height: 30rem;
+}
+
+.contact p, #company p {
+    color: #000;
+    margin: 0;
+}
+
+.contact img {
+    margin-right: 1rem;
+}
+
+#company {
+    width: 40%;
+}
+
+.contact {
+    display: flex;
+    height: 3rem;
+    z-index: 8;
+    align-items: center;
+}
+
+#company {
+    width: 40%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#company p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    width: 20rem;
+}
+
+#socials {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.socials {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+}
+
+.socials img {
+    width: 1.2rem;
+}
+
+#company h3 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1250px) {
+    header {
+        justify-content: space-around;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        background-color: #fff;
+        width: 100vw;
+        height: 85vh;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all .5s ease-in-out;
+    }
+
+    .mobile-menu-open {
+        transform: translateX(0%);
+    }
+
+    header nav ul li a:hover {
+        font-size: 1.1rem;
+    }
+
+    header nav ul li a:hover {
+        background-color: transparent;
+        color: #494949;
+        border-bottom: 1px solid #fa4e10;
+    }
+
+    #sign-up-for-newsletter {
+        display: none;
+    }
+
+    #logo {
+        margin: 0 auto 0 2rem;
+    }
+
+    #hamburger {
+        display: block;
+        margin-right: 2rem;
+    }
+
+    .active {
+        background-color: transparent;
+        color: #494949;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #newsletter {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #text-box {
+        padding: .5rem;
+        background-color:#494949;
+        width: 75%;
+    }
+    #text-box input {
+        height: 100%;
+        width: 50%;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid transparent;
+        color: #fff;
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #buy-for-me {
+        position: relative;
+        top: 15vh;
+        width: 100%;
+    }
+    #inner-buy {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+    #buy-text {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #buy-text p {
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        line-height: 1.6;
+    }
+    #sell-for-me {
+        position: relative;
+        top: 15vh;
+        width: 100%;
+    }
+    #inner-sell {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+    #sell-text {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }    
+    #sell-text p {
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        line-height: 1.6;
+    }
+    #trade-for-me {
+        position: relative;
+        /* top: 15vh; */
+        width: 100%;
+    }
+    #inner-trade {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+    #trade-text {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }    
+    #trade-text p {
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        line-height: 1.6;
+    }
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact {
+        width: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 7;
+        justify-content: center;
+        height: auto;
+        margin-left: 0;
+    }
+    
+    .contact p, #company p {
+        color: #000;
+        margin: 0;
+    }
+    
+    .contact img {
+        margin-right: 1rem;
+    }
+    
+    #company {
+        width: 40%;
+    }
+    
+    .contact {
+        display: flex;
+        height: 3rem;
+        z-index: 8;
+        align-items: center;
+    }
+    #company {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 20rem;
+    }
+    #company p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    #text-box {
+        padding: .5rem;
+        background-color:#494949;
+        width: 85%;
+    }
+    #text-box input {
+        width: 50%;
+    }
+}
